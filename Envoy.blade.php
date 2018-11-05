@@ -23,6 +23,15 @@
 
 @endtask
 
+@task('git:pull', ['on' => $on])
+	
+	cd {{ $app_dir }}
+	echo "hemos entrado al directorio {{ $app_dir }}";
+	git pull origin {{ $branch }};
+	echo "código actualizado correctamente";
+
+@endtask
+
 @task('ls', ['on' => $on])
 	
 	cd {{ $app_dir }}
@@ -41,5 +50,12 @@
 	
 	cd {{ $app_dir }}
 	php artisan key:generate
+
+@endtask
+
+@task('migrate', ['on' => $on])
+	
+	cd {{ $app_dir }}
+	php artisan migrate
 
 @endtask
