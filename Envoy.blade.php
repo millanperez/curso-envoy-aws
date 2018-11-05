@@ -6,7 +6,7 @@
 
 	$origin = 'git@github.com:millanperez/curso-envoy-aws';
 	$branch = isset($branch) ? $branch : 'master';
-	$app_dir = '/var/www/html';
+	$app_dir = '/var/www/html/curso-envoy-aws';
 	
 	if (! isset($on)) {
 		throw new exception('La variable --on no está disponible');
@@ -18,7 +18,7 @@
 	
 	cd {{ $app_dir }}
 	echo "hemos entrado al directorio /var/www/html";
-	git clone $origin;
+	git clone {{ $origin }};
 	echo "repositorio clonado correctamente";
 
 @endtask
@@ -27,5 +27,19 @@
 	
 	cd {{ $app_dir }}
 	ls -la
+
+@endtask
+
+@task('composer:install', ['on' => $on])
+	
+	cd {{ $app_dir }}
+	composer install
+
+@endtask
+
+@task('key:generate', ['on' => $on])
+	
+	cd {{ $app_dir }}
+	php artisan key:generate
 
 @endtask
