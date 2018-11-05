@@ -14,7 +14,7 @@
 
 @endsetup
 
-@macro('app:deploy', ['on' => $on])
+@macro('app:deploy', ['on' => $on, 'confirm' => true])
 
 	down
 	git:pull
