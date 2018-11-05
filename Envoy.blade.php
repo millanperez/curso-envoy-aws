@@ -14,6 +14,18 @@
 
 @endsetup
 
+@macro('app:deploy', ['on' => $on])
+
+	down
+	git:pull
+	migrate
+	composer:install
+	assets:install
+	cache:clear
+	up
+
+@endmacro
+
 @task('git:clone', ['on' => $on])
 	
 	cd {{ $app_dir }}
@@ -46,6 +58,13 @@
 
 @endtask
 
+@task('assets:install', ['on' => $on])
+	
+	cd {{ $app_dir }}
+	yarn install
+
+@endtask
+
 @task('key:generate', ['on' => $on])
 	
 	cd {{ $app_dir }}
@@ -57,5 +76,29 @@
 	
 	cd {{ $app_dir }}
 	php artisan migrate
+
+@endtask
+
+@task('up', ['on' => $on])
+	
+	cd {{ $app_dir }}
+	php artisan up
+
+@endtask
+
+@task('down', ['on' => $on])
+	
+	cd {{ $app_dir }}
+	php artisan down
+
+@endtask
+
+@task('cache:clear', ['on' => $on])
+	
+	cd {{ $app_dir }}
+	php artisan cache:clear
+	php artisan view:clear
+	php artisan config:clear
+	echo "Cache limpiada correctamente!"
 
 @endtask
