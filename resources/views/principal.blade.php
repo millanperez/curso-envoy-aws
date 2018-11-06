@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="img/favicon.png">
     <title>Sistema Ventas - IncanatoIT</title>
     
-    <link href="css/plantilha.css" rel="stylesheet">
+    <link href="css/plantilha.css" rel="stylesheet" />
 </head>
 
 <body class="app header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden">
@@ -155,7 +155,7 @@
         <span class="ml-auto">Desarrollado por <a href="http://www.incanatoit.com/">IncanatoIT</a></span>
     </footer>
 
-    <script src="js/plantilha.js"></script>
+    <script src="js/plantilla.js"></script>
 </body>
 
 </html>
