@@ -20,10 +20,10 @@ mix.styles([
     'resources/css/style.css',
 ], 'public/css/plantilla.css')
 .scripts([
+    'resources/js/jquery.min.js',
+    'resources/js/popper.min.js',
     'resources/js/bootstrap.min.js',
     'resources/js/Chart.min.js',
-    'resources/js/jquery.min.js',
-    'resources/js/pace.min.js',
-    'resources/js/popper.min.js',
+    'resources/js/pace.min.js',    
     'resources/js/template.js',    
 ], 'public/js/plantilla.js');
