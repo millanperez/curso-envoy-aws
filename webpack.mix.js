@@ -26,4 +26,4 @@ mix.styles([
     'resources/js/Chart.min.js',
     'resources/js/pace.min.js',    
     'resources/js/template.js',    
-], 'public/js/plantilla.js');
+], 'public/js/plantilla.js').sourceMaps();
