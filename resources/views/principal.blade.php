@@ -19,7 +19,7 @@
 </head>
 
 <body class="app header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden">
-    <div id="app"></div>
+    <div id="app">
     <header class="app-header navbar">
         <button class="navbar-toggler mobile-sidebar-toggler d-lg-none mr-auto" type="button">
           <span class="navbar-toggler-icon"></span>
@@ -159,6 +159,7 @@
         <span><a href="http://www.incanatoit.com/">IncanatoIT</a> &copy; 2017</span>
         <span class="ml-auto">Desarrollado por <a href="http://www.incanatoit.com/">IncanatoIT</a></span>
     </footer>
+    </div>
     <script src="js/app.js"></script>
     <!-- Bootstrap and necessary plugins -->
     <script src="js/jquery.min.js"></script>
