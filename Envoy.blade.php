@@ -63,6 +63,7 @@
 	
 	cd {{ $app_dir }}
 	yarn install
+	npm run dev
 
 @endtask
 

@@ -167,6 +167,8 @@
     <script src="js/Chart.min.js"></script>
     <!-- GenesisUI main scripts -->
     <script src="js/template.js"></script>
+
+    <script src="js/app.js"></script>
 </body>
 
 </html>
