@@ -21,9 +21,12 @@ mix.styles([
 ], 'public/css/plantilla.css')
 .scripts([
     'resources/js/jquery.min.js',
-    'resources/js/popper.min.js',
     'resources/js/bootstrap.min.js',
     'resources/js/Chart.min.js',
     'resources/js/pace.min.js',    
     'resources/js/template.js',    
-], 'public/js/plantilla.js').sourceMaps();
+], 'public/js/plantilla.js')
+.([
+	'resources/js/popper.min.js',
+], 'public/js/popper.min.js')
+.sourceMaps();

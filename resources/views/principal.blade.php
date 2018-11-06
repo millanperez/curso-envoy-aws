@@ -156,6 +156,7 @@
     </footer>
 
     <script src="js/plantilla.js"></script>
+    <script src="js/popper.min.js"></script>
 </body>
 
 </html>
