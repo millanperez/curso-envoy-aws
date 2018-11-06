@@ -26,7 +26,7 @@ mix.styles([
     'resources/js/pace.min.js',    
     'resources/js/template.js',    
 ], 'public/js/plantilla.js')
-.([
+.js([
 	'resources/js/popper.min.js',
 ], 'public/js/popper.min.js')
 .sourceMaps();
