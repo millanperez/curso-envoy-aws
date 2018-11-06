@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('principal');
+    return view('contenido/contenido');
 });
 
 
