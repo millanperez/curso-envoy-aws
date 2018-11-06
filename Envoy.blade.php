@@ -35,6 +35,7 @@
 
 @endtask
 
+
 @task('git:pull', ['on' => $on])
 	
 	cd {{ $app_dir }}
