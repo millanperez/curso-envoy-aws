@@ -8,6 +8,7 @@
     <meta name="description" content="Sistema Ventas Laravel Vue Js- IncanatoIT">
     <meta name="author" content="Incanatoit.com">
     <meta name="keyword" content="Sistema ventas Laravel Vue Js, Sistema compras Laravel Vue Js">
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
     <link rel="shortcut icon" href="img/favicon.png">
     <title>Sistema Ventas - IncanatoIT</title>
     <!-- Icons -->
@@ -157,7 +158,7 @@
         <span><a href="http://www.incanatoit.com/">IncanatoIT</a> &copy; 2017</span>
         <span class="ml-auto">Desarrollado por <a href="http://www.incanatoit.com/">IncanatoIT</a></span>
     </footer>
-
+    <script src="js/app.js"></script>
     <!-- Bootstrap and necessary plugins -->
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -168,7 +169,7 @@
     <!-- GenesisUI main scripts -->
     <script src="js/template.js"></script>
 
-    <script src="js/app.js"></script>
+
 </body>
 
 </html>
